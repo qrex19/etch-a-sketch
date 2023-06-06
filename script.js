@@ -1,7 +1,7 @@
 const container = document.querySelector('.container');
 
 var btnArr = [];
-btnArr.length = 600;
+btnArr.length = 2624;
 
 for(let i = 0; i < btnArr.length; i++) {
     btnArr[i] = document.createElement('button');
