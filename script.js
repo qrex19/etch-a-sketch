@@ -11,10 +11,33 @@ for(let i = 0; i < btnArr.length; i++) {
     container.append(btnArr[i]);
 }
 
+//mode code
+var mode = 'paint'; //default mode
+
+const modeButton = document.querySelector('.mode');
+
+modeButton.addEventListener('click', function run() {
+
+    if(mode == 'paint') {
+        mode = 'erase';
+        modeButton.innerHTML = 'Paint';
+    }else {
+        mode = 'paint';
+        modeButton.innerHTML = 'Erase';
+    }
+
+});
+
+
 //btnArr is the array that contains all the button objects
 for(let i = 0; i < btnArr.length; i++) {
     btnArr[i].addEventListener('mouseover', function run() {
-        btnArr[i].style.backgroundColor = 'black';
+        if(mode == 'paint') {
+            btnArr[i].style.backgroundColor = 'black';
+        }else {
+            btnArr[i].style.backgroundColor = 'white';
+        }
+        
     });
 }
 
