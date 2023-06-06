@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 10%;
+
+    border: 3px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+button {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-style: none;
+    margin: 0px;
+    border: 1px solid grey;
+    padding: 0px;
+}
