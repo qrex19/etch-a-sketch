@@ -15,8 +15,17 @@ body {
     margin-top: 5%;
     border: 0px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
+}
 
+select {
+    width: 80px;
+    height: 30px;
+    margin-top: 10%;
+    border: 3px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    background-color: #FFF3E2;
+    font-size: large;
 }
 
 button.mode {
@@ -37,4 +46,10 @@ button {
     border-style: none;
     margin: 0px;
     padding: 0px;
+}
+
+div.options {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
 }

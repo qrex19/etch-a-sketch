@@ -28,6 +28,23 @@ modeButton.addEventListener('click', function run() {
 
 });
 
+//erase all code
+
+const eraseAll = document.querySelector('.erase-all');
+
+eraseAll.addEventListener('click', function run() {
+    for(let i = 0; i < btnArr.length; i++) {
+        btnArr[i].style.backgroundColor = 'white';
+    }
+});
+
+
+//brush code
+
+//Add brush change feature
+
+
+
 
 //btnArr is the array that contains all the button objects
 for(let i = 0; i < btnArr.length; i++) {
